@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>loadersz – Playground</title>
+    <link rel="stylesheet" href="demo.css" />
+  </head>
+  <body>
+    <header class="site">
+      <p class="eyebrow">Vanilla JavaScript</p>
+      <h1>loadersz</h1>
+      <p>Eine Script-Zeile genügt. Danach steht das Element direkt im HTML.</p>
+    </header>
+
+    <main>
+      <section class="playground" aria-label="Playground">
+        <div class="stage">
+          <loadersz-loader id="preview" state="racing" size="160" speed="1" density="1" particle-radius="1" aria-label="Racing"></loadersz-loader>
+          <p id="state-name">racing</p>
+        </div>
+
+        <form id="controls">
+          <label>
+            Geschwindigkeit
+            <input id="speed" type="range" min="0.2" max="2.5" step="0.05" value="1" />
+            <output id="speed-out">1.00</output>
+          </label>
+          <label>
+            Dichte
+            <input id="density" type="range" min="0.35" max="2" step="0.05" value="1" />
+            <output id="density-out">1.00</output>
+          </label>
+          <label>
+            Partikelradius
+            <input id="radius" type="range" min="0.5" max="2.5" step="0.05" value="1" />
+            <output id="radius-out">1.00</output>
+          </label>
+          <fieldset>
+            <legend>Farbe</legend>
+            <label><input type="radio" name="color-mode" value="native" checked /> Original</label>
+            <label><input type="radio" name="color-mode" value="hue" /> Farbton</label>
+            <label><input type="radio" name="color-mode" value="css" /> CSS-Farbe</label>
+          </fieldset>
+          <label id="hue-field" hidden>
+            Farbton
+            <input id="hue" type="range" min="0" max="360" step="1" value="88" />
+            <output id="hue-out">88</output>
+          </label>
+          <label id="css-field" hidden>
+            CSS-Farbe
+            <input id="css-color" type="color" value="#3366ff" />
+          </label>
+          <button type="button" id="surprise">Überrasch mich</button>
+        </form>
+
+        <div class="snippet">
+          <pre id="snippet"></pre>
+          <button type="button" id="copy">Kopieren</button>
+        </div>
+      </section>
+
+      <section class="catalog" aria-label="Alle Zustände">
+        <div class="toolbar">
+          <input id="search" type="search" placeholder="Zustand suchen" autocomplete="off" />
+          <div id="filters" class="filters"></div>
+        </div>
+        <p id="empty" hidden>Kein Zustand für diese Suche.</p>
+        <div id="groups"></div>
+      </section>
+    </main>
+
+    <script src="../loadersz.js"></script>
+    <script src="demo.js"></script>
+  </body>
+</html>
