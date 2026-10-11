@@ -100,7 +100,7 @@
   }
 
   function renderFilters() {
-    [{ id: 'all', label: 'Alle ' + api.LOADER_STATES.length }].concat(api.LOADER_CATEGORIES).forEach(function (item) {
+    [{ id: 'all', label: 'All ' + api.LOADER_STATES.length }].concat(api.LOADER_CATEGORIES).forEach(function (item) {
       var button = document.createElement('button');
       button.type = 'button';
       button.className = 'filter';
@@ -180,8 +180,8 @@
   copyButton.addEventListener('click', function () {
     var text = snippet.textContent;
     function done() {
-      copyButton.textContent = 'Kopiert';
-      setTimeout(function () { copyButton.textContent = 'Kopieren'; }, 1200);
+      copyButton.textContent = 'Copied';
+      setTimeout(function () { copyButton.textContent = 'Copy'; }, 1200);
     }
     function fallback() {
       var area = document.createElement('textarea');

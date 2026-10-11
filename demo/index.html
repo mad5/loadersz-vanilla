@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="de">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,7 +10,7 @@
     <header class="site">
       <p class="eyebrow">Vanilla JavaScript</p>
       <h1>loadersz</h1>
-      <p>Eine Script-Zeile genügt. Danach steht das Element direkt im HTML.</p>
+      <p>One script line is enough. After that, the element lives directly in the HTML.</p>
     </header>
 
     <main>
@@ -22,50 +22,50 @@
 
         <form id="controls">
           <label>
-            Geschwindigkeit
+            Speed
             <input id="speed" type="range" min="0.2" max="2.5" step="0.05" value="1" />
             <output id="speed-out">1.00</output>
           </label>
           <label>
-            Dichte
+            Density
             <input id="density" type="range" min="0.35" max="2" step="0.05" value="1" />
             <output id="density-out">1.00</output>
           </label>
           <label>
-            Partikelradius
+            Particle radius
             <input id="radius" type="range" min="0.5" max="2.5" step="0.05" value="1" />
             <output id="radius-out">1.00</output>
           </label>
           <fieldset>
-            <legend>Farbe</legend>
+            <legend>Color</legend>
             <label><input type="radio" name="color-mode" value="native" checked /> Original</label>
-            <label><input type="radio" name="color-mode" value="hue" /> Farbton</label>
-            <label><input type="radio" name="color-mode" value="css" /> CSS-Farbe</label>
+            <label><input type="radio" name="color-mode" value="hue" /> Hue</label>
+            <label><input type="radio" name="color-mode" value="css" /> CSS color</label>
           </fieldset>
           <label id="hue-field" hidden>
-            Farbton
+            Hue
             <input id="hue" type="range" min="0" max="360" step="1" value="88" />
             <output id="hue-out">88</output>
           </label>
           <label id="css-field" hidden>
-            CSS-Farbe
+            CSS color
             <input id="css-color" type="color" value="#3366ff" />
           </label>
-          <button type="button" id="surprise">Überrasch mich</button>
+          <button type="button" id="surprise">Surprise me</button>
         </form>
 
         <div class="snippet">
           <pre id="snippet"></pre>
-          <button type="button" id="copy">Kopieren</button>
+          <button type="button" id="copy">Copy</button>
         </div>
       </section>
 
-      <section class="catalog" aria-label="Alle Zustände">
+      <section class="catalog" aria-label="All states">
         <div class="toolbar">
-          <input id="search" type="search" placeholder="Zustand suchen" autocomplete="off" />
+          <input id="search" type="search" placeholder="Search states" autocomplete="off" />
           <div id="filters" class="filters"></div>
         </div>
-        <p id="empty" hidden>Kein Zustand für diese Suche.</p>
+        <p id="empty" hidden>No state matches this search.</p>
         <div id="groups"></div>
       </section>
     </main>

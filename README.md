@@ -7,13 +7,9 @@ Canvas loading animations as a single JavaScript file. No build step, no npm, no
 <loadersz-loader state="racing" size="96"></loadersz-loader>
 ```
 
-This is a vanilla JavaScript port of [loadersz](https://github.com/lumberjacque/loadersz-core) by lumberjacque. The original library and its interactive reference site:
+## Live-Preview
 
-- Demo and documentation: [loadersz.vercel.app](https://loadersz.vercel.app/)
-- Source: [github.com/lumberjacque/loadersz-core](https://github.com/lumberjacque/loadersz-core)
-- npm package: [loadersz](https://www.npmjs.com/package/loadersz)
-
-The original ships as an ESM package with optional adapters for React, Vue, Svelte, and Angular. This repository is only `loadersz.js`. All 160 motions are included and selected with the `state` attribute.
+- [loadersz-vanilla](http://mad5.de/loadersz-vanilla/demo/)
 
 ## Install
 
@@ -128,6 +124,16 @@ python3 -m http.server 8765
 ```
 
 Then visit [http://127.0.0.1:8765/demo/](http://127.0.0.1:8765/demo/).
+
+## Reference
+
+This is a vanilla JavaScript port of [loadersz](https://github.com/lumberjacque/loadersz-core) by lumberjacque. The original library and its interactive reference site:
+
+- Demo and documentation: [loadersz.vercel.app](https://loadersz.vercel.app/)
+- Source: [github.com/lumberjacque/loadersz-core](https://github.com/lumberjacque/loadersz-core)
+- npm package: [loadersz](https://www.npmjs.com/package/loadersz)
+
+The original ships as an ESM package with optional adapters for React, Vue, Svelte, and Angular. This repository is only `loadersz.js`. All 160 motions are included and selected with the `state` attribute.
 
 ## License
 
